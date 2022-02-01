@@ -34,5 +34,5 @@ var listener = app.listen(process.env.PORT, function () {
 let responseObject = {};
 app.get("api/timestamp/:date",(req, res) =>{
   let input = req.params.date;
-  res.json(input);
+  res.json(responseObject);
 });
