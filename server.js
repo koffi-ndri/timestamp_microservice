@@ -32,7 +32,9 @@ var listener = app.listen(process.env.PORT, function () {
 });
 
 let responseObject = {};
-app.get("api/timestamp/:date",(req, res) =>{
+
+app.get("/api/:date",(req, res) =>{
   let input = req.params.date;
+  
   res.json(responseObject);
 });
