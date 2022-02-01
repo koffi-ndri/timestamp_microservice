@@ -53,6 +53,6 @@ app.get("/api/:date",(req, res) =>{
 
 app.get("/api", (req, res) =>{
   responseObject["unix"] = new Date().getTime();
-  
+  responseObject["utc"] = new Date().toUTCString();
   res.json(responseObject);
 });
